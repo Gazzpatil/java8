@@ -137,8 +137,13 @@ public class StreamInterview {
 //		emplyees who are older than 25 years
 		
 		
-//		15)
+//	//	15)Get second highest salary from the employee
 		
+		Optional<Double> findFirst = list.stream().map(m->m.salary).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
+		if(findFirst.isPresent())
+			System.out.println(findFirst.get());
+		else
+			System.out.println("Not Present !!!!!!!!!");
 		
 		
 	}
