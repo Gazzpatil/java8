@@ -88,7 +88,8 @@ public class StreamInterview {
 		/*
 		 * Optional<Emp> collect = list.stream().filter(f->f.gender=="Male" &&
 		 * f.department=="Development").collect(Collectors.minBy(Comparator.comparing(c-
-		 * >c.age))); if(collect.isPresent()) System.out.println(collect.get()); else
+		 * >c.age))); 
+		 * if(collect.isPresent()) System.out.println(collect.get()); else
 		 * System.out.println("Not found!!!!!");
 		 */
 		
@@ -139,11 +140,13 @@ public class StreamInterview {
 		
 //	//	15)Get second highest salary from the employee
 		
-		Optional<Double> findFirst = list.stream().map(m->m.salary).distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
-		if(findFirst.isPresent())
-			System.out.println(findFirst.get());
-		else
-			System.out.println("Not Present !!!!!!!!!");
+		/*
+		 * Optional<Double> findFirst =
+		 * list.stream().map(m->m.salary).distinct().sorted(Comparator.reverseOrder()).
+		 * skip(1).findFirst(); if(findFirst.isPresent())
+		 * System.out.println(findFirst.get()); else
+		 * System.out.println("Not Present !!!!!!!!!");
+		 */
 		
 		
 	}
